@@ -5,24 +5,25 @@ with open('README.md') as file:
     long_description = file.read()
 
 setuptools.setup(
-    name="typemallow",
-    version="0.0.4",
+    name="typemallow2",
+    version="0.0.3",
     url="https://github.com/adenh93/typemallow",
 
-    author="Aden Herold",
-    author_email="aden.herold1@gmail.com",
+    author="Jules Aubier",
+    author_email="jules.aubier97@gmail.com",
 
-    description="An elegant and automatic solution for generating/outputting Typescript interfaces from your Marshmallow Schemas.",
+    description="An elegant and automatic solution for generating/outputting Typescript interfaces and enums from your Marshmallow Schemas and enums classes."
+                "Extension of Aden Harold works on typemallow.",
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords=['Marshmallow', 'Typescript', 'Python', 'Flask', 'Django'],
 
-    packages=['typemallow'],
+    packages=['typemallow2'],
     include_package_data=True,
     zip_safe=False,
     platforms='any',
 
     install_requires=[
-        'marshmallow'
-    ]
-)
+        'marshmallow>=2.0.0',
+        'marshmallow_enum>=1.5'
+    ])

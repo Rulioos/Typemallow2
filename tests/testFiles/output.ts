@@ -1,16 +1,17 @@
-export enum MonEnum2 {
+export enum MyAutoEnum {
 	enum1, 
 	enum2, 
 }
 
-export enum MonEnum {
-	enum1 = 1, 
-	enum2 = 2, 
+export enum MyNonAutoEnum {
+	enum1 = 100,
+	enum2 = 200,
+	enum3 = "Baguette",
 }
 
 export interface Boo {
 	some_field: string;
-	my_enum_field: MonEnum;
+	my_enum_field: MyAutoEnum;
 }
 
 export interface Foo {
